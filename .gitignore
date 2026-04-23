@@ -1,27 +1,61 @@
-# Logs
-logs
-*.log
+# Environment Variables - NEVER COMMIT THESE
+.env
+.env.local
+.env.*.local
+.env.production
+.env.development
+
+# Node.js
+node_modules/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
 
-node_modules
-dist
-dist-ssr
+# Build outputs
+dist/
+dist-ssr/
+build/
 *.local
 
-# Editor directories and files
+# IDE and Editor files
 .vscode/*
 !.vscode/extensions.json
-.idea
-.DS_Store
+.idea/
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
+*.swp
+*.swo
+*~
 
-.env
-.env.*
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Logs
+logs/
+*.log
+
+# Uploads (local files)
+backend/uploads/*
+!backend/uploads/.gitkeep
+
+# Dependencies
+.npm/
+.eslintcache
+
+# Misc
+.cache/
+.env.test
